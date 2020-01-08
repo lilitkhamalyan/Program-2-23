@@ -1,21 +1,22 @@
-// Program2_23_Spotlight.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// name: Lilit Khamalyan
+// date: 1/07/2020
+// Program 2-23 Spotlight: Suppose a retail business sells an item that is regularly priced at $59.95
+// and is planning to have a sale where the item's price will be reduced by 20%. You have been asked to write a program to calculate the sale price of the item.
 #include "pch.h"
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n"; 
+     // Variables to hold regular price, discount, and sale price.
+     double regularPrice = 59.95;
+     double discount, salePrice;
+     // Calculate discount
+     discount = regularPrice * 0.2;
+     // Calculate  and display sale price
+     salePrice = regularPrice - discount;
+     cout << "Sale price of the item is $" << salePrice << endl;
+     system("pause");
+     return 0;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
